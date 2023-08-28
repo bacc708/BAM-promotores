@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="../css/registro-login.css"> <!-- Enlace al archivo CSS -->
+    <title>Registro - Reaper Gaming Squad</title> 
+</head>
+<body>
+    <header> <!-- Encabezado -->
+        <div class="iconos">
+            <button id="botonHome"><a href="./home.html"><i class="fa-solid fa-house"></i></a></button> <!-- Boton que dirige directamente al Home si el usuario no quiere registrarse ni loguearse -->
+            <button id="botonIdioma">  <!-- El atributo id se utiliza para asignar un identificador único a un elemento HTML. En este caso, el botón se identifica con el id "botonIdioma", lo que permite seleccionarlo específicamente en JavaScript o aplicar estilos específicos en CSS.--><i class="fa-solid fa-globe"></i> <!-- Icono de globo terráqueo de Font Awesome --></button>
+        </div>
+    </header>
+    <main> <!-- Contenido principal -->
+        <div class="cabecera">
+            <img src="../img/logo.png" alt="Logo Reaper Gaming Squad"> <!-- Logo de Reaper Gaming Squad -->
+            <div class="titulo">
+                <h1>Registro</h1> <!-- Título principal -->
+                <h2>New Gamer</h2> <!-- Subtítulo -->
+            </div>
+        </div>
+        <form> <!-- Formulario de registro -->
+            <label for="nombre">Nombre de usuario</label> <!-- Etiqueta para el campo de nombre de usuario -->
+            <input type="text" id="nombre" name="nombre" required> <!-- Campo de entrada para el nombre de usuario con validación requerida -->
+            <label for="correo">Correo electrónico</label> <!-- Etiqueta para el campo de correo -->
+            <input type="email" id="correo" name="correo" required> <!-- Campo de entrada para el correo con validación requerida -->
+            <label for="contrasena">Contraseña:</label> <!-- Etiqueta para el campo de contraseña -->
+            <input type="password" id="contrasena" name="contrasena" required> <!-- Campo de entrada para la contraseña con validación requerida -->
+            <label for="confirmarContrasena">Confirmar Contraseña</label> <!-- Etiqueta para el campo de confirmación de contraseña -->
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required> <!-- Campo de entrada para confirmar la contraseña con validación requerida -->
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label> <!-- Etiqueta para el campo de fecha de nacimiento -->
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required> <!-- Campo de entrada para la fecha de nacimiento con validación requerida -->
+            <div class="checkbox"> <!-- Contenedor para la casilla de verificación -->
+                <input type="checkbox" id="newsLetters" name="newsLetter"> <!-- Casilla de verificación para recibir newsletters -->
+                <label for="newsLetters">(Opcional) Estoy de acuerdo con que me envíen correos con actualizaciones, consejos y ofertas especiales de Reaper. Puedes revocar el consentimiento en cualquier momento.</label> 
+            </div>
+            <div class="botones">
+                <button class="continuar"><a href="./home.html">Continuar</a></button> <!-- Botón para continuar el registro -->
+                <button class="login"><a href="./login.html">¿Ya tenés una cuenta?</a></button> <!-- Botón para ir a la página de inicio de sesión -->
+            </div>
+        </form>
+    </main>
+    <footer> <!-- Pie de página -->
+        <div class="redesSociales">
+            <i class="fa-solid fa-envelope"></i> <!-- Icono de sobre de Font Awesome. Esta línea de código crea un espacio para mostrar el icono de un sobre de Font Awesome en tu página web. La apariencia visual del icono estará determinada por la hoja de estilos de Font Awesome que enlazaste previamente en tu página. -->
+            <i class="fa-brands fa-discord"></i> <!-- Icono de Discord de Font Awesome -->
+            <i class="fa-brands fa-instagram"></i> <!-- Icono de Instagram de Font Awesome -->
+            <i class="fa-brands fa-twitter"></i> <!-- Icono de Twitter de Font Awesome -->
+            <i class="fa-brands fa-youtube"></i> <!-- Icono de YouTube de Font Awesome -->
+        </div>
+    </footer>
+</body>
+</html>

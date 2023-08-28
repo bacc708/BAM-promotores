@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="../css/home.css"> <!-- Enlace al archivo CSS -->
+    <title>Home - Reaper Gaming Squad</title> 
+</head>
+<body>
+    <header> 
+        <div class="iconos">
+            <button id="botonUser"><a href="#"><i class="fa-solid fa-user"></i></a></button> <!-- Botón para el perfil de usuario -->
+            <button id="botonLupa"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button> <!-- Botón para búsqueda, la idea aca es que con Js al apretar sobre la lupa se abra un campo para ingresar una palabra clave-->
+            <img src="../img/logo.png" alt="Logo Reaper Gaming Squad"> <!-- Logo de Reaper Gaming Squad -->
+            <button id="botonIdioma">  <!-- El atributo id se utiliza para asignar un identificador único a un elemento HTML. En este caso, el botón se identifica con el id "botonIdioma", lo que permite seleccionarlo específicamente en JavaScript o aplicar estilos específicos en CSS.--><i class="fa-solid fa-globe"></i> <!-- Icono de globo terráqueo de Font Awesome --></button>
+        </div>
+        <nav> <!-- Navegación principal -->
+            <ul class="texto-nav"> <!-- Lista de enlaces de navegación -->
+                <li><a href="#seccion-home">Home</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="#seccion-noticias">Noticias</a></li> <!-- Enlace a la página de noticias -->
+                <li><a href="#seccion-tutoriales">Tutoriales</a></li> <!-- Enlace a la página de tutoriales -->
+                <li><a href="#seccion-guias">Guias</a></li> <!-- Enlace a la página de guías -->
+                <li><a href="#" id="enlaceContacto">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Contenido principal -->
+        <section class="home" id="seccion-home">
+            <div class="titulo">
+                <h2>Estás viendo: </h2>
+                <p>Home</p>
+            </div>
+            <div class="contenedor-home">
+                <div class="principal"> 
+                    <img src="../img/imgNoticiaPrincipal.jpeg" alt="Imagen de la Noticia Principal"> 
+                    <h2>La pantalla de inicio de 'Starfield' ha sido criticada por ser demasiado simple.</h2> 
+                    <p>La pantalla de inicio de Starfield, foco de críticas. Ha sido la polémica videojueguil de este fin de semana, sin lugar a dudas. Mark Kern, ex desarrollador de Blizzard, publicó un tweet criticando la pantalla de inicio de 'Starfield'.</p> 
+                    <button><a href="#">Saber más..</a></button>
+                </div>
+                <div class="secundario"> 
+                    <div>
+                        <img src="../img/imgHome1.jpeg" alt="Imagen de una Xbox">
+                        <button><a href="#">Microsoft empieza a darle el adiós definitivo a la Xbox 360.</a></button>
+                    </div>
+                    <div>
+                        <img src="../img/imgHome2.jpeg" alt="Mando de Netflix">
+                        <button><a href="#">Netflix ya tiene un mando para controlar juegos en el televisor.</a></button>
+                    </div>
+                    <div>
+                        <img src="../img/imgHome3.jpeg" alt="Imagen del Juego">
+                        <button><a href="#">Activision no se la juega: el Call of Duty de 2023 será Modern Warfare III.</a></button>
+                    </div>
+                    <div>
+                        <img src="../img/imgHome4.png" alt="Imagen del juego">
+                        <button><a href="#">Rockstar ya sabe por dónde pasa el futuro de 'Red Dead Redemption' y no es un remake.</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-noticias" id="seccion-noticias">
+            <div class="titulo">
+                <h2>Estás viendo: </h2>
+                <p>Noticias</p>
+            </div>
+            <div class="noticias">
+                <div>
+                    <img src="../img/imgHome1.jpeg" alt="Imagen de una Xbox">
+                    <button><a href="#">Microsoft empieza a darle el adiós definitivo a la Xbox 360.</a></button>
+                    <p>El anuncio lo ha hecho este lunes la propia Microsoft. Todos aquellos que todavía utilizan sus consolas “clásicas” se enfrentarán a un importante cambio en los próximos meses</p>
+                    <button><a href="#">Saber más..</a></button> 
+                </div>
+                <div>
+                    <img src="../img/imgHome2.jpeg" alt="Mando de Netflix">
+                    <button><a href="#">Netflix ya tiene un mando para controlar juegos en el televisor.</a></button>
+                    <p>Efectivamente, eso es lo que ha lanzado Netflix en la App Store. Se trata de una aplicación que funciona como un mando de juegos remoto y que, por su descripción, se conecta al televisor para, a priori, controlar juegos.</p>
+                    <button><a href="#">Saber más..</a></button> 
+                </div>
+                <div>
+                    <img src="../img/imgHome3.jpeg" alt="Imagen del Juego">
+                    <button><a href="#">Activision no se la juega: el Call of Duty de 2023 será Modern Warfare III.</a></button>
+                    <p>A falta de una nueva entrega, bienvenidas sean las caras conocidas. Un poquito más tarde de lo habitual, y tras los rumores que apuntaban a un descanso, Activision ha confirmado que el nuevo 'Call of Duty' será 'Modern Warfare 3'.</p>
+                    <button><a href="#">Saber más..</a></button> 
+                </div>
+                <div>
+                    <img src="../img/imgHome4.png" alt="Imagen del juego">
+                    <button><a href="#">Rockstar ya sabe por dónde pasa el futuro de 'Red Dead Redemption' y no es un remake.</a></button>
+                    <p>El clásico western de mundo abierto ‘Red Dead Redemption’ lanzado hace más de una década todavía tiene un largo camino por delante. Después de meses de rumores relacionados al posible lanzamiento de un remake o una remasterización del título, Rockstar Games ha desvelado sus planes.</p>
+                    <button><a href="#">Saber más..</a></button> 
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-tutoriales" id="seccion-tutoriales">
+            <div class="titulo">
+                <h2>Estás viendo: </h2>
+                <p>Tutoriales</p>
+            </div>
+            <div class="tutoriales">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-ysNgcnM9UA?si=dxEO5H0vLzK7R2d5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Doom</p>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/La0NdPNoja8?si=jBllisQtU9pjKiZZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Sims 4</p>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fmt7DBWFZ0U?si=k4Y5BzoxOik_gBgf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Counter Strike</p>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5sPQiHIA8Y8?si=Tr3z4rwCNJy0Awtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>League of Lengends</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-guias" id="seccion-guias">
+            <div class="titulo">
+                <h2>Estás viendo: </h2>
+                <p>Guías</p>
+            </div>
+            <div class="guias">
+                <div>
+                    <img src="../img/doom-img.jpg" alt="Imagen del juego Doom">
+                    <button><a href="#">Guias y trucos del juego Doom</a></button>
+                </div>
+                <div>
+                    <img src="../img/sims-img.jpeg" alt="Imagen del juego los sims">
+                    <button><a href="#">Guias y trucos del juego Los Sims 4</a></button>
+                </div>
+                <div>
+                    <img src="../img/counter-img.jpg" alt="Imagen del Juego Counter Strike">
+                    <button><a href="#">Guias y trucos del juego Counter Strike</a></button>
+                </div>
+                <div>
+                    <img src="../img/lol-img.jpg" alt="Imagen del juego lol">
+                    <button><a href="#">Guias y teucos del juego League of Legends</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <!-- Pie de página -->
+        <div class="redesSociales">
+            <i class="fa-solid fa-envelope"></i> 
+            <i class="fa-brands fa-discord"></i> 
+            <i class="fa-brands fa-instagram"></i> 
+            <i class="fa-brands fa-twitter"></i> 
+            <i class="fa-brands fa-youtube"></i> 
+        </div>
+        <p>Copyright &copy; 2023 Reaper Gaming Squad. Todos los derechos reservados | Creado por Johana Baccei</p> <!-- Texto de derechos de autor -->
+    </footer>
+    <script src="../js/script.js"></script> <!-- enlace para JS -->
+</body>
+</html>

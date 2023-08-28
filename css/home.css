@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'sugo-bold'; 
+    src: url('../Fuente/sugo-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sugo-simple';
+    src: url('../Fuente/sugo-simple.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo para todo el cuerpo de la página */
+body {
+    background-color: #040303;
+    margin: 0;
+    padding: 0;
+    /* Fuente predeterminada para el texto */
+    font-family: 'sugo-bold', sans-serif;
+    width: 95%;
+}
+
+/* Estilo para el encabezado en la parte superior */
+header {
+    /* Fondo con una imagen */
+    background-image: url(../img/FondoBN.png);
+    /* Ajuste de tamaño de la imagen de fondo */
+    background-size: cover;
+    /* No repetir la imagen en el fondo */
+    background-repeat: no-repeat;
+    position: relative;
+    /* Espaciado interno alrededor del encabezado */
+    padding: 20px;
+    /* Centrar el contenido dentro del encabezado */
+    text-align: center;
+    width: 101%;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#botonUser, #botonLupa, #botonIdioma {
+    background-color: #f23e2651; /* Color naranja con transparencia */
+    border: 2px solid #f23f26; /* Borde sólido naranja */
+    border-radius: 20%;
+    font-size: 20px;
+    padding: 8px;
+    height: 40px;
+}
+
+/* Cambiar el color de fondo al pasar el mouse */
+#botonUser:hover, #botonLupa:hover, #botonIdioma:hover {
+  background-color: #04030385;
+}
+
+#botonUser .fa-user, #botonLupa .fa-magnifying-glass, #botonIdioma .fa-globe {
+    color: #f23f26; /* Color naranja */
+}
+
+header img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-top: -100px;
+    margin-bottom: -80px;
+}
+
+nav {
+    margin-left: -20px;
+    position: absolute;
+    width: 101%;
+    height: 60px;
+    background-color: #f23f26;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+   }
+
+nav ul li a {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-inline: 56px;
+    background-color: none;
+    border: 4px solid #4b332b;
+    border-radius: 15px;
+    color: #4b332b;
+    padding: 0 5px;
+}
+
+nav .texto-nav li a:hover {
+color: #f3e4ca;
+background-color: #4b332b79;
+}
+
+main {
+    margin-top: 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+.titulo {
+    display: flex;
+    align-items: baseline;
+    margin-top: -30px;
+}
+
+.titulo h2 {
+    color: #f3e4ca;
+    margin-right: 30px;
+}
+
+.titulo p {
+    color: #f23f26;
+    font-size: 60px;
+    border-bottom: 4px solid #f23f26;
+}
+
+/* CSS para la sección de contenido principal y secundaria */
+.contenedor-home {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.principal {
+    flex: 1; /* El doble de ancho que la sección secundaria */
+    padding: 15px;
+    font-family: 'sugo-simple';
+    border: 4px solid #4b332b;
+    border-radius: 25px;
+}
+
+.principal h2 {
+    color: #f3e4ca;
+}
+
+.principal p {
+    color: #f3e4ca;
+    font-size: 14px;
+}
+
+.principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.principal button{
+    background-color: #040303;
+    border: none;
+    margin-left: 80%;
+}
+
+.principal button a {
+    background-color: #040303;
+    color: #f23f26;
+    text-decoration: none;
+    font-family: 'sugo-bold';
+    font-size: 20px;
+}
+
+.principal button a:hover {
+    color: #4b332b; /* Cambio de color al pasar el mouse */
+}
+
+.secundario {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+/* Estilos para cada noticia secundaria */
+.secundario div {
+    padding: 12px;
+    font-family: 'sugo-simple';
+    border: 4px solid #4b332b;
+    border-radius: 25px;
+}
+
+.secundario img {
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.secundario button {
+    background-color: #040303;
+    border: none;
+}
+
+.secundario button a {
+    background-color: #040303;
+    color: #f23f26;
+    text-decoration: none;
+    font-family: 'sugo-simple';
+    font-size: 15px;
+}
+
+.secundario button a:hover {
+    color: #4b332b; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la sección de noticias */
+
+.noticias {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.noticias div {
+    padding: 12px;
+    font-family: 'sugo-simple';
+    border: 4px solid #4b332b;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.noticias img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.noticias button {
+    background-color: #040303;
+    border: none;
+}
+
+.noticias button a {
+    background-color: #040303;
+    color: #f23f26;
+    text-decoration: none;
+    font-family: 'sugo-simple';
+    font-size: 20px;
+}
+
+.noticias button a:hover {
+    color: #4b332b; /* Cambio de color al pasar el mouse */
+}
+
+.noticias p {
+    color: #f3e4ca;
+    font-size: 15px;
+}
+
+/* Estilos para la sección de tutoriales */
+
+.tutoriales {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.tutoriales div {
+    padding: 12px;
+    font-family: 'sugo-simple';
+    border: 4px solid #4b332b;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.tutoriales iframe {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.tutoriales p {
+    color: #f23f26;
+    font-size: 25px;
+}
+
+/* Estilos para la sección de Guias */
+
+.guias {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.guias div {
+    padding: 12px;
+    font-family: 'sugo-simple';
+    border: 4px solid #4b332b;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.guias img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.guias button {
+    background-color: #040303;
+    border: none;
+}
+
+.guias button a {
+    background-color: #040303;
+    color: #f23f26;
+    text-decoration: none;
+    font-family: 'sugo-simple';
+    font-size: 20px;
+}
+
+.guias button a:hover {
+    color: #4b332b; /* Cambio de color al pasar el mouse */
+}
+
+.guias p {
+    color: #f3e4ca;
+    font-size: 15px;
+}
+
+/* Estilos para la ventana emergente */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #04030337;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #040303;
+  padding: 20px;
+  border-radius: 15px;
+  width: 517px;
+}
+
+.popup-content .cabecera {
+    border: 4px solid #f3e4ca;
+    display: flex;
+    padding: 0;
+    width: 517px;
+}
+
+.popup img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: -60px;
+}
+
+.popup .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    padding-top: 50px;
+}
+
+.popup h3 {
+  margin-top: 0;
+  color: #f23f26;
+  font-size: 50px;
+}
+
+.popup p {
+    font-size: 15px;
+    color: #f3e4ca;
+}
+
+.popup form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #f23f26;
+}
+
+.popup form input,
+.popup form textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #4b332b;
+}
+
+.popup form button {
+  background-color: #f23f26;
+  color: #f3e4ca;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-family: 'sugo-bold';
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup form button:hover {
+  background-color: #4b332b;
+}
+
+.popup #cerrarPopup {
+    margin-top: 10px;
+    background-color: #f23f26;
+    color: #f3e4ca;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'sugo-bold';
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup #cerrarPopup:hover {
+  background-color: #4b332b;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    background-color: #f23f26;
+    padding: 10px;
+    width: 105%;
+}
+  
+/* Estilo para los iconos de redes sociales */
+footer .redesSociales {
+    color: #f3e4ca;
+}
+  
+/* Estilos para los íconos de redes sociales */
+footer .fa-solid {
+    background-color: #f23e2651; /* Color naranja con transparencia */
+    border: 2px solid #f3e4ca; /* Borde sólido naranja */
+    border-radius: 20%;
+    font-size: 15px;
+    padding: 5px;
+}
+footer .fa-brands {
+    background-color: #f23e2651; /* Color naranja con transparencia */
+    border: 2px solid #f3e4ca; /* Borde sólido naranja */
+    border-radius: 20%;
+    font-size: 15px;
+    padding: 5px;
+}
+  
+footer .fa-brands:hover {
+    background-color: #04030385; /* Cambio de color al pasar el mouse */
+}
+
+footer .fa-solid:hover {
+    background-color: #04030385; /* Cambio de color al pasar el mouse */
+}
+
+footer p {
+    color: #f3e4ca;
+}

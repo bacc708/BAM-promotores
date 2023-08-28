@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Definición del tipo de documento -->
+<html lang="es"> <!-- Apertura del elemento HTML, con especificación del idioma -->
+<head> <!-- Encabezado del documento -->
+    <meta charset="UTF-8"> <!-- Especificación de la codificación de caracteres, es un estándar que puede representar la mayoría de los caracteres de todos los idiomas en el mundo, es importante para garantizar que los caracteres especiales y acentos se muestren correctamente en la página web, independientemente del idioma utilizado. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos. Se usa para configurar la visualización y el escalado de la página en dispositivos móviles y otros dispositivos con pantallas de diferentes tamaños. "width=device-width" establece el ancho de la página para que coincida con el ancho del dispositivo en el que se muestra. "initial-scale=1.0" establece el nivel de escala inicial de la página al 100%, es decir se muestra inicialmente a su tamaño real. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- La hoja de estilos de Font Awesome contiene las reglas de estilo necesarias para mostrar los iconos correctamente. Una vez que hayas enlazado esta hoja de estilos a tu página, puedes usar las clases correspondientes de Font Awesome en tus elementos HTML para agregar iconos. "link" se utiliza para enlazar recursos externos, como hojas de estilos, hojas de estilos CSS, fuentes o iconos, a tu página web. "rel="stylesheet"" especifica la relación del enlace con el documento actual. En este caso, estamos estableciendo la relación como "stylesheet", lo que significa que el recurso externo es una hoja de estilos que se aplicará al documento HTML. "href" especifica la URL del recurso externo que deseamos enlazar. Esta hoja de estilos contiene la información necesaria para mostrar los iconos de Font Awesome en tu página web.  -->
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Enlace al archivo CSS -->
+    <title>Reaper Gaming Squad</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+</head>
+<body> <!-- Cuerpo -->
+    <header> <!-- Encabezado -->
+        <div class="iconos">
+            <button id="botonHome"><a href="./pages/home.html"><i class="fa-solid fa-house"></i></a></button> <!-- Boton que dirige directamente al Home si el usuario no quiere registrarse ni loguearse -->
+            <button id="botonIdioma">  <!-- El atributo id se utiliza para asignar un identificador único a un elemento HTML. En este caso, el botón se identifica con el id "botonIdioma", lo que permite seleccionarlo específicamente en JavaScript o aplicar estilos específicos en CSS.--><i class="fa-solid fa-globe"></i> <!-- Icono de globo terráqueo de Font Awesome --></button>
+        </div>
+        <div class="titulo">
+            <h1>Are you ready for <br> this?</h1> <!-- Título principal -->
+        </div>
+    </header>
+    <main> <!-- Contenido principal -->
+        <img src="./img/logo.png" alt="Logo de Reaper Gaming Squad"> <!-- Imagen del logo con una descripción alternativa. El atributo "alt" es una práctica importante para hacer que tus imágenes sean accesibles y brinden información relevante en caso de que la imagen no se cargue, no se muestre o si, por ejemplo, el usuario tiene problemas de visión. -->
+        <div class="registro-login">
+        <button><a href="./pages/registro.html">Registro</a></button> <!-- Botón de registro. La etiqueta "button" se utiliza para crear un botón interactivo. Los botones son elementos clave para la interacción, ya que permiten que los usuarios realicen acciones -->
+        <button><a href="./pages/login.html">Login</a></button> <!-- Botón de inicio de sesión -->
+        </div>
+    </main>
+    <footer> <!-- Pie de página -->
+        <div class="redesSociales">
+            <i class="fa-solid fa-envelope"></i> <!-- Icono de sobre de Font Awesome. Esta línea de código crea un espacio para mostrar el icono de un sobre de Font Awesome en tu página web. La apariencia visual del icono estará determinada por la hoja de estilos de Font Awesome que enlazaste previamente en tu página. -->
+            <i class="fa-brands fa-discord"></i> <!-- Icono de Discord de Font Awesome -->
+            <i class="fa-brands fa-instagram"></i> <!-- Icono de Instagram de Font Awesome -->
+            <i class="fa-brands fa-twitter"></i> <!-- Icono de Twitter de Font Awesome -->
+            <i class="fa-brands fa-youtube"></i> <!-- Icono de YouTube de Font Awesome -->
+    </footer>
+</body>
+</html>

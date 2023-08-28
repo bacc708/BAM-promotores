@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'sugo-bold'; 
+    src: url('../Fuente/sugo-bold.ttf') format('truetype');
+}
+
+/* Estilo para todo el cuerpo de la página */
+body {
+    /* Fondo con una imagen */
+    background-image: url(../img/fondoIndex.png);
+    /* Ajuste de tamaño de la imagen de fondo */
+    background-size: cover;
+    /* No repetir la imagen en el fondo */
+    background-repeat: no-repeat;
+    /* Eliminar márgenes y relleno predeterminados */
+    margin: 0;
+    padding: 0;
+    /* Fuente predeterminada para el texto */
+    font-family: 'sugo-bold', sans-serif;
+}
+
+/* Estilo para el encabezado en la parte superior */
+header {
+    position: relative;
+    /* Espaciado interno alrededor del encabezado */
+    padding: 20px;
+    /* Centrar el contenido dentro del encabezado */
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#botonHome, #botonIdioma {
+    background-color: #f23e2651; /* Color naranja con transparencia */
+    border: 2px solid #f23f26; /* Borde sólido naranja */
+    border-radius: 20%;
+    font-size: 20px;
+    padding: 8px;
+}
+
+/* Cambiar el color de los iconos en los botones */
+#botonHome .fa-house,
+#botonIdioma .fa-globe {
+    color: #f23f26; /* Color naranja */
+}
+
+/* Cambiar el color de fondo al pasar el mouse */
+#botonHome:hover,
+#botonIdioma:hover {
+  background-color: #04030385;
+}
+
+/* Estilo para el título principal en el encabezado */
+header h1 {
+    /* Eliminar margen para el título principal */
+    margin-top: -40px;
+    /* Pone todas las letras en mayúscula */
+    text-transform: uppercase;
+    /* Color de texto en general */
+    color: #f3e4ca;
+    font-size: 80px;
+}
+
+/* Estilos para el cuerpo principal */
+main {
+    margin-top: -160px;
+}
+
+main img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+.registro-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+/* Estilos para los botones de registro y login */
+main button {
+    background-color: #040303;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'sugo-bold', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    color: #f3e4ca;
+    width: 140px;
+}
+
+button:hover {
+    background-color: #f23e2651; /* Cambio de color al pasar el mouse */
+    border: 2px solid#f23f26;
+    color: #040303;
+}
+
+/* Estilos para enlaces dentro de botones */
+main button a {
+    text-decoration: none;
+    color: #f3e4ca;
+}
+  
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 25px;
+}
+  
+/* Estilo para los iconos de redes sociales */
+footer .redesSociales {
+    color: #f23f26;
+}
+  
+/* Estilos para los íconos de redes sociales */
+footer .fa-solid {
+    background-color: #f23e2651; /* Color naranja con transparencia */
+    border: 2px solid #f23f26; /* Borde sólido naranja */
+    border-radius: 20%;
+    font-size: 15px;
+    padding: 5px;
+}
+footer .fa-brands {
+    background-color: #f23e2651; /* Color naranja con transparencia */
+    border: 2px solid #f23f26; /* Borde sólido naranja */
+    border-radius: 20%;
+    font-size: 15px;
+    padding: 5px;
+}
+  
+footer .fa-brands:hover {
+    background-color: #04030385; /* Cambio de color al pasar el mouse */
+}
+
+footer .fa-solid:hover {
+    background-color: #04030385; /* Cambio de color al pasar el mouse */
+}
+  
