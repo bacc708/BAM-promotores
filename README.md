@@ -14,7 +14,7 @@ login.html
 Proporciona a los usuarios registrados un medio para iniciar sesión en sus cuentas. Al igual que la página de registro, esta página presenta un formulario donde los usuarios pueden ingresar su nombre de usuario y contraseña. La página está diseñada de manera intuitiva y se ajusta visualmente al estilo general del sitio.
 
 home.html
-Es el núcleo de la plataforma. Aquí, los usuarios pueden encontrar noticias, tutoriales y guías relacionadas con los juegos. El diseño de la página está estructurado en diferentes secciones, cada una con su contenido específico. Además, se ha implementado un script de JavaScript para crear una ventana emergente de contacto que permite a los usuarios interactuar con el sitio.
+Es el núcleo de la plataforma. Aquí, los usuarios pueden encontrar noticias, tutoriales y guías relacionadas con los juegos. El diseño de la página está estructurado en diferentes secciones, cada una con su contenido específico. Tome la decisión de darle una vuelta de rosca a esta pagina, en vez de crear diferentes pagina para noticias, tutoriales y guias, decidí ponerlas todas en una misma pagina creando un componente scroll spy Además, se ha implementado un script de JavaScript para crear una ventana emergente de contacto que permite a los usuarios interactuar con el sitio.
 
 CSS
 Cada página HTML tiene su propia hoja de estilo CSS que define la apariencia y el diseño de los elementos en la página. Las hojas de estilo han sido cuidadosamente diseñadas para que los elementos visuales sean atractivos y coherentes en todo el sitio, teniendo en cuenta los colores y fuente recibida en la documentacion inicial.
